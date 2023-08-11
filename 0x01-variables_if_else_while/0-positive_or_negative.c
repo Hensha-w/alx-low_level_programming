@@ -11,10 +11,16 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
+	{
 		printf("%d in position\n", n);
+        }
 	else if (n == 0 )
+	{
 		printf("%d in zero\n", n);
+        }
 	else
+	{
 		printf("%d in negative\n", n);
+	}
 	return (0);
 }
