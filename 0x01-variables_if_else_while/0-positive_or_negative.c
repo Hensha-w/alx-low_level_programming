@@ -10,17 +10,17 @@ int main(void)
 	int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 0)
+	if (n < 0)
 	{
-		printf("%d in position\n", n);
+		printf("%d is %s\n", "negative");
         }
-	else if (n == 0 )
+	else if (n > 0 )
 	{
-		printf("%d in zero\n", n);
+		printf("%d is %s\n", "positive");
         }
 	else
 	{
-		printf("%d in negative\n", n);
+		printf("%d is %s\n", "zero");
 	}
 	return (0);
 }
