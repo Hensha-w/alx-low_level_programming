@@ -7,16 +7,9 @@
 void positive_or_negative(int i)
 {
 	if (i < 0)
-	{
-		printf("%d is %s\n", i, "negative");
-	}
+		printf("%d is negative\n", i);
 	else if (i > 0)
-	{
-		printf("%d is %s\n", i, "positive");
-	}
+		printf("%d is positive\n", i);
 	else
-	{
-		printf("%d is %s\n", i, "zero");
-	}
-	return;
+		printf("%d is zero\n", i);
 }
